@@ -7291,6 +7291,94 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="parts-winbond" urn="urn:adsk.eagle:library:7686330">
+<packages>
+<package name="SO08-208" urn="urn:adsk.eagle:footprint:17446/1" library_version="3">
+<description>&lt;b&gt;SOIC .208" 8 LEAD&lt;/b&gt;&lt;p&gt;
+Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
+<wire x1="-2.665" y1="2.6308" x2="-2.665" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-2.665" y1="0.508" x2="-2.665" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-2.665" y1="-0.508" x2="-2.665" y2="-2.6308" width="0.1524" layer="21"/>
+<wire x1="-2.665" y1="-2.6308" x2="2.665" y2="-2.6308" width="0.1524" layer="21"/>
+<wire x1="2.665" y1="-2.6308" x2="2.665" y2="2.6308" width="0.1524" layer="21"/>
+<wire x1="2.665" y1="2.6308" x2="-2.665" y2="2.6308" width="0.1524" layer="21"/>
+<wire x1="-2.665" y1="0.508" x2="-2.665" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-2.665" y1="-2.2752" x2="2.54" y2="-2.2752" width="0.0508" layer="21"/>
+<smd name="1" x="-1.905" y="-3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="-1.905" y="3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-0.635" y="-3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="0.635" y="-3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="-0.635" y="3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="0.635" y="3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="1.905" y="-3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="1.905" y="3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<text x="4.445" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-3.175" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="1.651" y1="2.6308" x2="2.159" y2="4.025" layer="51"/>
+<rectangle x1="-2.159" y1="-4.025" x2="-1.651" y2="-2.6308" layer="51"/>
+<rectangle x1="-0.889" y1="-4.025" x2="-0.381" y2="-2.6308" layer="51"/>
+<rectangle x1="0.381" y1="-4.025" x2="0.889" y2="-2.6054" layer="51"/>
+<rectangle x1="1.651" y1="-4.025" x2="2.159" y2="-2.6308" layer="51"/>
+<rectangle x1="0.381" y1="2.6308" x2="0.889" y2="4.025" layer="51"/>
+<rectangle x1="-0.889" y1="2.6308" x2="-0.381" y2="4.025" layer="51"/>
+<rectangle x1="-2.159" y1="2.6308" x2="-1.651" y2="4.025" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="SO08-208" urn="urn:adsk.eagle:package:17547/1" type="box" library_version="3">
+<description>SOIC .208" 8 LEAD
+Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
+<packageinstances>
+<packageinstance name="SO08-208"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="NOR" urn="urn:adsk.eagle:symbol:7686331/1" library_version="3">
+<pin name="/CS" x="-12.7" y="5.08" length="short"/>
+<pin name="DO" x="-12.7" y="2.54" length="short"/>
+<pin name="/WP" x="-12.7" y="0" length="short"/>
+<pin name="GND" x="-12.7" y="-2.54" length="short"/>
+<pin name="VCC" x="10.16" y="5.08" length="short" rot="R180"/>
+<pin name="/HOLD" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="CLK" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="DI" x="10.16" y="-2.54" length="short" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="W25Q128JV" urn="urn:adsk.eagle:component:7686332/2" prefix="IC" uservalue="yes" library_version="3">
+<gates>
+<gate name="G$1" symbol="NOR" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08-208">
+<connects>
+<connect gate="G$1" pin="/CS" pad="1"/>
+<connect gate="G$1" pin="/HOLD" pad="7"/>
+<connect gate="G$1" pin="/WP" pad="3"/>
+<connect gate="G$1" pin="CLK" pad="6"/>
+<connect gate="G$1" pin="DI" pad="5"/>
+<connect gate="G$1" pin="DO" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17547/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7325,6 +7413,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="BAT1" library="parts-elna" library_urn="urn:adsk.eagle:library:8169083" deviceset="DCK-3R3E224U-E" device="" package3d_urn="urn:adsk.eagle:package:7451333/2"/>
 <part name="IC1" library="parts-issi" library_urn="urn:adsk.eagle:library:7589419" deviceset="IS43TR82560DL" device="" package3d_urn="urn:adsk.eagle:package:10611048/2"/>
 <part name="IC2" library="parts-issi" library_urn="urn:adsk.eagle:library:7589419" deviceset="IS43TR82560DL" device="" package3d_urn="urn:adsk.eagle:package:10611048/2"/>
+<part name="IC3" library="parts-winbond" library_urn="urn:adsk.eagle:library:7686330" deviceset="W25Q128JV" device="" package3d_urn="urn:adsk.eagle:package:17547/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -8584,6 +8673,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="SV3" gate="G$1" x="251.46" y="88.9" smashed="yes" rot="R180">
 <attribute name="VALUE" x="252.73" y="99.06" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="252.73" y="80.518" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="IC3" gate="G$1" x="66.04" y="66.04" smashed="yes">
+<attribute name="NAME" x="55.88" y="76.2" size="1.778" layer="95"/>
+<attribute name="VALUE" x="63.5" y="73.66" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
