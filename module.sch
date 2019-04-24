@@ -6972,6 +6972,64 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="parts-elna" urn="urn:adsk.eagle:library:8169083">
+<packages>
+<package name="621" urn="urn:adsk.eagle:footprint:7451331/1" library_version="1">
+<circle x="0" y="3.4" radius="3.4" width="0.1" layer="51"/>
+<wire x1="-1.4" y1="0" x2="-1.4" y2="-1.4" width="0.3" layer="21"/>
+<wire x1="1.4" y1="0" x2="1.4" y2="-1.4" width="0.3" layer="21"/>
+<wire x1="-1.4" y1="0" x2="1.4" y2="0" width="0.3" layer="21" curve="-315.23973"/>
+<smd name="+" x="0.75" y="-1.6" dx="2" dy="0.8" layer="1" rot="R90"/>
+<smd name="-" x="-0.75" y="-1.6" dx="2" dy="0.8" layer="1" rot="R90"/>
+<rectangle x1="-1" y1="-2.3" x2="-0.5" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="-2.3" x2="1" y2="-0.6" layer="51"/>
+<rectangle x1="-1" y1="-0.6" x2="1" y2="0.2" layer="51"/>
+<text x="1.8" y="-1" size="0.8" layer="25" font="vector" ratio="15">&gt;NAME</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="621" urn="urn:adsk.eagle:package:7451333/2" type="model" library_version="1">
+<packageinstances>
+<packageinstance name="621"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="CPOL" urn="urn:adsk.eagle:symbol:8169084/1" library_version="1">
+<wire x1="-1.524" y1="-0.889" x2="1.524" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-0.889" x2="1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-1.524" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="1.524" y2="0" width="0.254" layer="94"/>
+<text x="1.143" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.5842" y="0.4064" size="1.27" layer="94" rot="R90">+</text>
+<text x="1.143" y="-4.5974" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-2.54" x2="1.651" y2="-1.651" layer="94"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DCK-3R3E224U-E" urn="urn:adsk.eagle:component:8169085/1" prefix="BAT" uservalue="yes" library_version="1">
+<gates>
+<gate name="G$1" symbol="CPOL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="621">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7451333/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7002,6 +7060,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="PCI1" library="parts-attend" library_urn="urn:adsk.eagle:library:7445056" deviceset="119A-XXA00" device="" package3d_urn="urn:adsk.eagle:package:8727576/2"/>
 <part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA05-2" device="" package3d_urn="urn:adsk.eagle:package:8329/1"/>
 <part name="SV3" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA05-1" device="" package3d_urn="urn:adsk.eagle:package:8332/1"/>
+<part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
+<part name="BAT1" library="parts-elna" library_urn="urn:adsk.eagle:library:8169083" deviceset="DCK-3R3E224U-E" device="" package3d_urn="urn:adsk.eagle:package:7451333/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -8305,6 +8365,25 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="223.52" y1="40.64" x2="231.14" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+<instance part="BAT1" gate="G$1" x="233.68" y="157.48" smashed="yes">
+<attribute name="NAME" x="234.823" y="157.9626" size="1.778" layer="95"/>
+<attribute name="VALUE" x="234.823" y="152.8826" size="1.778" layer="96"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
