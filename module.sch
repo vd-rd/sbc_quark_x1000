@@ -1978,6 +1978,28 @@ Metric Code Size 1005</description>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
+<package name="C075-032X103" urn="urn:adsk.eagle:footprint:23155/1" library_version="34">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 7.5 mm, outline 3.2 x 10.3 mm</description>
+<wire x1="4.826" y1="1.524" x2="-4.826" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-1.524" x2="4.826" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="1.524" x2="5.08" y2="1.27" width="0.1524" layer="21" curve="-90"/>
+<wire x1="4.826" y1="-1.524" x2="5.08" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.08" y1="-1.27" x2="-4.826" y2="-1.524" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.08" y1="1.27" x2="-4.826" y2="1.524" width="0.1524" layer="21" curve="-90"/>
+<wire x1="0.508" y1="0" x2="2.54" y2="0" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-0.508" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="0.889" x2="-0.508" y2="0" width="0.4064" layer="21"/>
+<wire x1="-0.508" y1="0" x2="-0.508" y2="-0.889" width="0.4064" layer="21"/>
+<wire x1="0.508" y1="0.889" x2="0.508" y2="0" width="0.4064" layer="21"/>
+<wire x1="0.508" y1="0" x2="0.508" y2="-0.889" width="0.4064" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="0.9144" shape="octagon"/>
+<pad name="2" x="3.81" y="0" drill="0.9144" shape="octagon"/>
+<text x="-4.826" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.826" y="-3.048" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="C050-025X075" urn="urn:adsk.eagle:package:8154556/2" type="model" library_version="29">
@@ -2006,6 +2028,13 @@ Metric Code Size 1005</description>
 <packageinstance name="C0603"/>
 </packageinstances>
 </package3d>
+<package3d name="C075-032X103" urn="urn:adsk.eagle:package:10600575/2" type="model" library_version="34">
+<description>CAPACITOR
+grid 7.5 mm, outline 3.2 x 10.3 mm</description>
+<packageinstances>
+<packageinstance name="C075-032X103"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="C-EU" urn="urn:adsk.eagle:symbol:8154553/2" library_version="29">
@@ -2022,7 +2051,7 @@ Metric Code Size 1005</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CAP-" urn="urn:adsk.eagle:component:8154557/10" prefix="C" uservalue="yes" library_version="29">
+<deviceset name="CAP-" urn="urn:adsk.eagle:component:8154557/11" prefix="C" uservalue="yes" library_version="34">
 <gates>
 <gate name="G$1" symbol="C-EU" x="0" y="0"/>
 </gates>
@@ -2085,6 +2114,18 @@ Metric Code Size 1005</description>
 <attribute name="PACKAGE" value="0603" constant="no"/>
 <attribute name="RATING" value="10V" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="075-032X103" package="C075-032X103">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10600575/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -7293,7 +7334,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </library>
 <library name="parts-winbond" urn="urn:adsk.eagle:library:7686330">
 <packages>
-<package name="SO08-208" urn="urn:adsk.eagle:footprint:17446/1" library_version="3">
+<package name="SO08-208" urn="urn:adsk.eagle:footprint:10612484/1" library_version="6">
 <description>&lt;b&gt;SOIC .208" 8 LEAD&lt;/b&gt;&lt;p&gt;
 Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
 <wire x1="-2.665" y1="2.6308" x2="-2.665" y2="0.508" width="0.1524" layer="21"/>
@@ -7325,9 +7366,9 @@ Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="SO08-208" urn="urn:adsk.eagle:package:17547/1" type="box" library_version="3">
-<description>SOIC .208" 8 LEAD
-Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
+<package3d name="SOIC127P790X216-8" urn="urn:adsk.eagle:package:10612485/2" type="model" library_version="6">
+<description>8-SOIC, 1.27 mm pitch, 7.90 mm span, 5.28 X 5.23 X 2.16 mm body
+&lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 7.90 mm span with body size 5.28 X 5.23 X 2.16 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SO08-208"/>
 </packageinstances>
@@ -7352,7 +7393,7 @@ Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="W25Q128JV" urn="urn:adsk.eagle:component:7686332/2" prefix="IC" uservalue="yes" library_version="3">
+<deviceset name="W25Q128JV" urn="urn:adsk.eagle:component:7686332/4" prefix="IC" uservalue="yes" library_version="6">
 <gates>
 <gate name="G$1" symbol="NOR" x="2.54" y="0"/>
 </gates>
@@ -7369,7 +7410,7 @@ Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17547/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10612485/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -7413,7 +7454,7 @@ Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
 <part name="BAT1" library="parts-elna" library_urn="urn:adsk.eagle:library:8169083" deviceset="DCK-3R3E224U-E" device="" package3d_urn="urn:adsk.eagle:package:7451333/2"/>
 <part name="IC1" library="parts-issi" library_urn="urn:adsk.eagle:library:7589419" deviceset="IS43TR82560DL" device="" package3d_urn="urn:adsk.eagle:package:10611048/2"/>
 <part name="IC2" library="parts-issi" library_urn="urn:adsk.eagle:library:7589419" deviceset="IS43TR82560DL" device="" package3d_urn="urn:adsk.eagle:package:10611048/2"/>
-<part name="IC3" library="parts-winbond" library_urn="urn:adsk.eagle:library:7686330" deviceset="W25Q128JV" device="" package3d_urn="urn:adsk.eagle:package:17547/1"/>
+<part name="IC3" library="parts-winbond" library_urn="urn:adsk.eagle:library:7686330" deviceset="W25Q128JV" device="" package3d_urn="urn:adsk.eagle:package:10612485/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -8736,17 +8777,17 @@ Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
 <attribute name="NAME" x="234.823" y="157.9626" size="1.778" layer="95"/>
 <attribute name="VALUE" x="234.823" y="152.8826" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="G$1" x="63.5" y="91.44" smashed="yes">
-<attribute name="NAME" x="53.34" y="133.35" size="1.778" layer="95"/>
-<attribute name="VALUE" x="53.34" y="48.26" size="1.778" layer="96"/>
+<instance part="IC1" gate="G$1" x="96.52" y="81.28" smashed="yes">
+<attribute name="NAME" x="86.36" y="123.19" size="1.778" layer="95"/>
+<attribute name="VALUE" x="86.36" y="38.1" size="1.778" layer="96"/>
 </instance>
 <instance part="IC1" gate="G$2" x="236.22" y="63.5" smashed="yes">
 <attribute name="NAME" x="231.14" y="87.63" size="1.778" layer="95"/>
 <attribute name="VALUE" x="231.14" y="27.94" size="1.778" layer="96"/>
 </instance>
-<instance part="IC2" gate="G$1" x="139.7" y="91.44" smashed="yes">
-<attribute name="NAME" x="129.54" y="133.35" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.54" y="48.26" size="1.778" layer="96"/>
+<instance part="IC2" gate="G$1" x="172.72" y="81.28" smashed="yes">
+<attribute name="NAME" x="162.56" y="123.19" size="1.778" layer="95"/>
+<attribute name="VALUE" x="162.56" y="38.1" size="1.778" layer="96"/>
 </instance>
 <instance part="IC2" gate="G$2" x="236.22" y="124.46" smashed="yes">
 <attribute name="NAME" x="231.14" y="148.59" size="1.778" layer="95"/>
@@ -8758,114 +8799,480 @@ Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
 <nets>
 <net name="DDR3_DQ[1]" class="0">
 <segment>
-<wire x1="78.74" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
-<label x="99.06" y="88.9" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="111.76" y1="78.74" x2="134.62" y2="78.74" width="0.1524" layer="91"/>
+<label x="132.08" y="78.74" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC1" gate="G$1" pin="DQL1"/>
 </segment>
 </net>
 <net name="DDR3_DQ[11]" class="0">
 <segment>
-<wire x1="154.94" y1="83.82" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
-<label x="175.26" y="83.82" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="187.96" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
+<label x="208.28" y="73.66" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC2" gate="G$1" pin="DQL3"/>
 </segment>
 </net>
 <net name="DDR3_DQ[12]" class="0">
 <segment>
-<wire x1="154.94" y1="81.28" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
-<label x="175.26" y="81.28" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="187.96" y1="71.12" x2="210.82" y2="71.12" width="0.1524" layer="91"/>
+<label x="208.28" y="71.12" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC2" gate="G$1" pin="DQL4"/>
 </segment>
 </net>
 <net name="DDR3_DQ[13]" class="0">
 <segment>
-<wire x1="154.94" y1="78.74" x2="177.8" y2="78.74" width="0.1524" layer="91"/>
-<label x="175.26" y="78.74" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="187.96" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
+<label x="208.28" y="68.58" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC2" gate="G$1" pin="DQL5"/>
 </segment>
 </net>
 <net name="DDR3_DQ[14]" class="0">
 <segment>
-<wire x1="154.94" y1="76.2" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
-<label x="175.26" y="76.2" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="187.96" y1="66.04" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
+<label x="208.28" y="66.04" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC2" gate="G$1" pin="DQL6"/>
 </segment>
 </net>
 <net name="DDR3_DQ[15]" class="0">
 <segment>
-<wire x1="154.94" y1="73.66" x2="177.8" y2="73.66" width="0.1524" layer="91"/>
-<label x="175.26" y="73.66" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="187.96" y1="63.5" x2="210.82" y2="63.5" width="0.1524" layer="91"/>
+<label x="208.28" y="63.5" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC2" gate="G$1" pin="DQL7"/>
 </segment>
 </net>
 <net name="DDR3_DQ[10]" class="0">
 <segment>
-<wire x1="154.94" y1="86.36" x2="177.8" y2="86.36" width="0.1524" layer="91"/>
-<label x="175.26" y="86.36" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="187.96" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
+<label x="208.28" y="76.2" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC2" gate="G$1" pin="DQL2"/>
 </segment>
 </net>
 <net name="DDR3_DQ[2]" class="0">
 <segment>
-<wire x1="78.74" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
-<label x="99.06" y="86.36" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="111.76" y1="76.2" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
+<label x="132.08" y="76.2" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC1" gate="G$1" pin="DQL2"/>
 </segment>
 </net>
 <net name="DDR3_DQ[3]" class="0">
 <segment>
-<wire x1="78.74" y1="83.82" x2="101.6" y2="83.82" width="0.1524" layer="91"/>
-<label x="99.06" y="83.82" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="111.76" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
+<label x="132.08" y="73.66" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC1" gate="G$1" pin="DQL3"/>
 </segment>
 </net>
 <net name="DDR3_DQ[4]" class="0">
 <segment>
-<wire x1="78.74" y1="81.28" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
-<label x="99.06" y="81.28" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="111.76" y1="71.12" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
+<label x="132.08" y="71.12" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC1" gate="G$1" pin="DQL4"/>
 </segment>
 </net>
 <net name="DDR3_DQ[5]" class="0">
 <segment>
-<wire x1="78.74" y1="78.74" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
-<label x="99.06" y="78.74" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="111.76" y1="68.58" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
+<label x="132.08" y="68.58" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC1" gate="G$1" pin="DQL5"/>
 </segment>
 </net>
 <net name="DDR3_DQ[6]" class="0">
 <segment>
-<wire x1="78.74" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
-<label x="99.06" y="76.2" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="111.76" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
+<label x="132.08" y="66.04" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC1" gate="G$1" pin="DQL6"/>
 </segment>
 </net>
 <net name="DDR3_DQ[7]" class="0">
 <segment>
-<wire x1="78.74" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
-<label x="99.06" y="73.66" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="111.76" y1="63.5" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
+<label x="132.08" y="63.5" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC1" gate="G$1" pin="DQL7"/>
 </segment>
 </net>
 <net name="DDR3_DQ[8]" class="0">
 <segment>
-<wire x1="154.94" y1="91.44" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
-<label x="175.26" y="91.44" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="187.96" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
+<label x="208.28" y="81.28" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC2" gate="G$1" pin="DQL0"/>
 </segment>
 </net>
 <net name="DDR3_DQ[9]" class="0">
 <segment>
-<wire x1="154.94" y1="88.9" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
-<label x="175.26" y="88.9" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="187.96" y1="78.74" x2="210.82" y2="78.74" width="0.1524" layer="91"/>
+<label x="208.28" y="78.74" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC2" gate="G$1" pin="DQL1"/>
 </segment>
 </net>
 <net name="DDR3_DQ[0]" class="0">
 <segment>
-<wire x1="78.74" y1="91.44" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
-<label x="99.06" y="91.44" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="111.76" y1="81.28" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
+<label x="132.08" y="81.28" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="IC1" gate="G$1" pin="DQL0"/>
+</segment>
+</net>
+<net name="DDR3_MA[1]" class="0">
+<segment>
+<wire x1="63.5" y1="78.74" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
+<label x="81.28" y="78.74" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A1"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="78.74" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
+<label x="157.48" y="78.74" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A1"/>
+</segment>
+</net>
+<net name="DDR3_MA[11]" class="0">
+<segment>
+<wire x1="63.5" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
+<label x="81.28" y="53.34" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A11"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="53.34" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
+<label x="157.48" y="53.34" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A11"/>
+</segment>
+</net>
+<net name="DDR3_MA[12]" class="0">
+<segment>
+<wire x1="63.5" y1="50.8" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
+<label x="81.28" y="50.8" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A12"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="50.8" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
+<label x="157.48" y="50.8" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A12"/>
+</segment>
+</net>
+<net name="DDR3_MA[13]" class="0">
+<segment>
+<wire x1="63.5" y1="48.26" x2="83.82" y2="48.26" width="0.1524" layer="91"/>
+<label x="81.28" y="48.26" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A13"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="48.26" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
+<label x="157.48" y="48.26" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A13"/>
+</segment>
+</net>
+<net name="DDR3_MA[14]" class="0">
+<segment>
+<wire x1="63.5" y1="45.72" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
+<label x="81.28" y="45.72" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A14"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="45.72" x2="160.02" y2="45.72" width="0.1524" layer="91"/>
+<label x="157.48" y="45.72" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A14"/>
+</segment>
+</net>
+<net name="DDR3_MA[15]" class="0">
+<segment>
+<wire x1="63.5" y1="43.18" x2="83.82" y2="43.18" width="0.1524" layer="91"/>
+<label x="81.28" y="43.18" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A15"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="43.18" x2="160.02" y2="43.18" width="0.1524" layer="91"/>
+<label x="157.48" y="43.18" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A15"/>
+</segment>
+</net>
+<net name="DDR3_MA[10]" class="0">
+<segment>
+<wire x1="63.5" y1="55.88" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
+<label x="81.28" y="55.88" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A10"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="55.88" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
+<label x="157.48" y="55.88" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A10"/>
+</segment>
+</net>
+<net name="DDR3_MA[2]" class="0">
+<segment>
+<wire x1="63.5" y1="76.2" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
+<label x="81.28" y="76.2" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A2"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="76.2" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
+<label x="157.48" y="76.2" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A2"/>
+</segment>
+</net>
+<net name="DDR3_MA[3]" class="0">
+<segment>
+<wire x1="63.5" y1="73.66" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
+<label x="81.28" y="73.66" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A3"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="73.66" x2="160.02" y2="73.66" width="0.1524" layer="91"/>
+<label x="157.48" y="73.66" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A3"/>
+</segment>
+</net>
+<net name="DDR3_MA[4]" class="0">
+<segment>
+<wire x1="63.5" y1="71.12" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
+<label x="81.28" y="71.12" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A4"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="71.12" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
+<label x="157.48" y="71.12" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A4"/>
+</segment>
+</net>
+<net name="DDR3_MA[5]" class="0">
+<segment>
+<wire x1="63.5" y1="68.58" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
+<label x="81.28" y="68.58" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A5"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
+<label x="157.48" y="68.58" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A5"/>
+</segment>
+</net>
+<net name="DDR3_MA[6]" class="0">
+<segment>
+<wire x1="63.5" y1="66.04" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
+<label x="81.28" y="66.04" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A6"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="66.04" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
+<label x="157.48" y="66.04" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A6"/>
+</segment>
+</net>
+<net name="DDR3_MA[7]" class="0">
+<segment>
+<wire x1="63.5" y1="63.5" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
+<label x="81.28" y="63.5" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A7"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="63.5" x2="160.02" y2="63.5" width="0.1524" layer="91"/>
+<label x="157.48" y="63.5" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A7"/>
+</segment>
+</net>
+<net name="DDR3_MA[8]" class="0">
+<segment>
+<wire x1="63.5" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
+<label x="81.28" y="60.96" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A8"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="60.96" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
+<label x="157.48" y="60.96" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A8"/>
+</segment>
+</net>
+<net name="DDR3_MA[9]" class="0">
+<segment>
+<wire x1="63.5" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
+<label x="81.28" y="58.42" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A9"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="58.42" x2="160.02" y2="58.42" width="0.1524" layer="91"/>
+<label x="157.48" y="58.42" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A9"/>
+</segment>
+</net>
+<net name="DDR3_MA[0]" class="0">
+<segment>
+<wire x1="63.5" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
+<label x="81.28" y="81.28" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="A0"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="81.28" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
+<label x="157.48" y="81.28" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="A0"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="!RESET"/>
+<wire x1="111.76" y1="43.18" x2="127" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DDR3_BS[1]" class="0">
+<segment>
+<wire x1="33.02" y1="165.1" x2="7.62" y2="165.1" width="0.1524" layer="91"/>
+<label x="10.16" y="165.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_BS[2]" class="0">
+<segment>
+<wire x1="33.02" y1="162.56" x2="7.62" y2="162.56" width="0.1524" layer="91"/>
+<label x="10.16" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_BS[0]" class="0">
+<segment>
+<wire x1="33.02" y1="167.64" x2="7.62" y2="167.64" width="0.1524" layer="91"/>
+<label x="10.16" y="167.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_CASB" class="0">
+<segment>
+<wire x1="33.02" y1="157.48" x2="7.62" y2="157.48" width="0.1524" layer="91"/>
+<label x="10.16" y="157.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_CK[1]" class="0">
+<segment>
+<wire x1="33.02" y1="116.84" x2="7.62" y2="116.84" width="0.1524" layer="91"/>
+<label x="10.16" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_CKB[1]" class="0">
+<segment>
+<wire x1="33.02" y1="149.86" x2="7.62" y2="149.86" width="0.1524" layer="91"/>
+<label x="10.16" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_CKB[0]" class="0">
+<segment>
+<wire x1="33.02" y1="152.4" x2="7.62" y2="152.4" width="0.1524" layer="91"/>
+<label x="10.16" y="152.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_CKE[1]" class="0">
+<segment>
+<wire x1="33.02" y1="144.78" x2="7.62" y2="144.78" width="0.1524" layer="91"/>
+<label x="10.16" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_CKE[0]" class="0">
+<segment>
+<wire x1="33.02" y1="147.32" x2="7.62" y2="147.32" width="0.1524" layer="91"/>
+<label x="10.16" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_CK[0]" class="0">
+<segment>
+<wire x1="33.02" y1="119.38" x2="7.62" y2="119.38" width="0.1524" layer="91"/>
+<label x="10.16" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_CMDPU" class="0">
+<segment>
+<wire x1="33.02" y1="139.7" x2="7.62" y2="139.7" width="0.1524" layer="91"/>
+<label x="10.16" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_CSB[1]" class="0">
+<segment>
+<wire x1="33.02" y1="132.08" x2="7.62" y2="132.08" width="0.1524" layer="91"/>
+<label x="10.16" y="132.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_CSB[0]" class="0">
+<segment>
+<wire x1="33.02" y1="134.62" x2="7.62" y2="134.62" width="0.1524" layer="91"/>
+<label x="10.16" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_DM[1]" class="0">
+<segment>
+<wire x1="33.02" y1="124.46" x2="7.62" y2="124.46" width="0.1524" layer="91"/>
+<label x="10.16" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_DM[0]" class="0">
+<segment>
+<wire x1="33.02" y1="127" x2="7.62" y2="127" width="0.1524" layer="91"/>
+<label x="10.16" y="127" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_DQPU" class="0">
+<segment>
+<wire x1="33.02" y1="111.76" x2="7.62" y2="111.76" width="0.1524" layer="91"/>
+<label x="10.16" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_DQS[1]" class="0">
+<segment>
+<wire x1="33.02" y1="96.52" x2="7.62" y2="96.52" width="0.1524" layer="91"/>
+<label x="10.16" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_DQSB[1]" class="0">
+<segment>
+<wire x1="33.02" y1="104.14" x2="7.62" y2="104.14" width="0.1524" layer="91"/>
+<label x="10.16" y="104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_DQSB[0]" class="0">
+<segment>
+<wire x1="33.02" y1="106.68" x2="7.62" y2="106.68" width="0.1524" layer="91"/>
+<label x="10.16" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_DQS[0]" class="0">
+<segment>
+<wire x1="33.02" y1="99.06" x2="7.62" y2="99.06" width="0.1524" layer="91"/>
+<label x="10.16" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_DRAMRSTB" class="0">
+<segment>
+<wire x1="33.02" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
+<label x="10.16" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_IDRAM_PWROK" class="0">
+<segment>
+<wire x1="33.02" y1="86.36" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
+<label x="10.16" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_ISYSPWR-GOOD" class="0">
+<segment>
+<wire x1="33.02" y1="83.82" x2="7.62" y2="83.82" width="0.1524" layer="91"/>
+<label x="10.16" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_ODT[1]" class="0">
+<segment>
+<wire x1="33.02" y1="76.2" x2="7.62" y2="76.2" width="0.1524" layer="91"/>
+<label x="10.16" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_ODT[0]" class="0">
+<segment>
+<wire x1="33.02" y1="78.74" x2="7.62" y2="78.74" width="0.1524" layer="91"/>
+<label x="10.16" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_ODTPU" class="0">
+<segment>
+<wire x1="33.02" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
+<label x="10.16" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_RASB" class="0">
+<segment>
+<wire x1="33.02" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
+<label x="10.16" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDR3_WEB" class="0">
+<segment>
+<wire x1="33.02" y1="66.04" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
+<label x="10.16" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
