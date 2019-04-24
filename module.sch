@@ -7030,6 +7030,267 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="parts-issi" urn="urn:adsk.eagle:library:7589419">
+<packages>
+<package name="FBGA78" urn="urn:adsk.eagle:footprint:10610771/2" library_version="7">
+<description>78-BGA, collapsing, 0.80 mm pitch, 8.00 X 10.5 X 1.00 mm body</description>
+<circle x="-5.154" y="4.2" radius="0.25" width="0" layer="21"/>
+<wire x1="-4.05" y1="3.425" x2="-4.05" y2="5.45" width="0.2" layer="21"/>
+<wire x1="-4.05" y1="5.45" x2="-2.225" y2="5.45" width="0.2" layer="21"/>
+<wire x1="4.05" y1="3.425" x2="4.05" y2="5.45" width="0.2" layer="21"/>
+<wire x1="4.05" y1="5.45" x2="2.225" y2="5.45" width="0.2" layer="21"/>
+<wire x1="4.05" y1="-3.425" x2="4.05" y2="-5.45" width="0.2" layer="21"/>
+<wire x1="4.05" y1="-5.45" x2="1.825" y2="-5.45" width="0.2" layer="21"/>
+<wire x1="-4.05" y1="-3.425" x2="-4.05" y2="-5.45" width="0.2" layer="21"/>
+<wire x1="-4.05" y1="-5.45" x2="-1.625" y2="-5.45" width="0.2" layer="21"/>
+<wire x1="4" y1="-5.25" x2="-4" y2="-5.25" width="0.12" layer="51"/>
+<wire x1="-4" y1="-5.25" x2="-4" y2="5.25" width="0.12" layer="51"/>
+<wire x1="-4" y1="5.25" x2="4" y2="5.25" width="0.12" layer="51"/>
+<wire x1="4" y1="5.25" x2="4" y2="-5.25" width="0.12" layer="51"/>
+<smd name="A1" x="-3.2" y="4.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="A2" x="-2.4" y="4.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="A3" x="-1.6" y="4.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="A7" x="1.6" y="4.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="A8" x="2.4" y="4.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="A9" x="3.2" y="4.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="B1" x="-3.2" y="4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="B2" x="-2.4" y="4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="B3" x="-1.6" y="4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="B7" x="1.6" y="4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="B8" x="2.4" y="4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="B9" x="3.2" y="4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="C1" x="-3.2" y="3.2" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="C2" x="-2.4" y="3.2" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="C3" x="-1.6" y="3.2" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="C7" x="1.6" y="3.2" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="C8" x="2.4" y="3.2" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="C9" x="3.2" y="3.2" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="D1" x="-3.2" y="2.4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="D2" x="-2.4" y="2.4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="D3" x="-1.6" y="2.4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="D7" x="1.6" y="2.4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="D8" x="2.4" y="2.4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="D9" x="3.2" y="2.4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="E1" x="-3.2" y="1.6" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="E2" x="-2.4" y="1.6" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="E3" x="-1.6" y="1.6" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="E7" x="1.6" y="1.6" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="E8" x="2.4" y="1.6" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="E9" x="3.2" y="1.6" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="F1" x="-3.2" y="0.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="F2" x="-2.4" y="0.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="F3" x="-1.6" y="0.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="F7" x="1.6" y="0.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="F8" x="2.4" y="0.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="F9" x="3.2" y="0.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="G1" x="-3.2" y="0" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="G2" x="-2.4" y="0" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="G3" x="-1.6" y="0" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="G7" x="1.6" y="0" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="G8" x="2.4" y="0" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="G9" x="3.2" y="0" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="H1" x="-3.2" y="-0.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="H2" x="-2.4" y="-0.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="H3" x="-1.6" y="-0.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="H7" x="1.6" y="-0.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="H8" x="2.4" y="-0.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="H9" x="3.2" y="-0.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="J1" x="-3.2" y="-1.6" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="J2" x="-2.4" y="-1.6" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="J3" x="-1.6" y="-1.6" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="J7" x="1.6" y="-1.6" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="J8" x="2.4" y="-1.6" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="J9" x="3.2" y="-1.6" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="K1" x="-3.2" y="-2.4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="L1" x="-3.2" y="-3.2" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="M1" x="-3.2" y="-4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="N1" x="-3.2" y="-4.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="K2" x="-2.4" y="-2.4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="L2" x="-2.4" y="-3.2" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="M2" x="-2.4" y="-4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="N2" x="-2.4" y="-4.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="K3" x="-1.6" y="-2.4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="L3" x="-1.6" y="-3.2" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="M3" x="-1.6" y="-4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="N3" x="-1.6" y="-4.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="K7" x="1.6" y="-2.4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="L7" x="1.6" y="-3.2" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="M7" x="1.6" y="-4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="N7" x="1.6" y="-4.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="K8" x="2.4" y="-2.4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="L8" x="2.4" y="-3.2" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="M8" x="2.4" y="-4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="N8" x="2.4" y="-4.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="K9" x="3.2" y="-2.4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="L9" x="3.2" y="-3.2" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="M9" x="3.2" y="-4" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<smd name="N9" x="3.2" y="-4.8" dx="0.4" dy="0.4" layer="1" roundness="100" thermals="no"/>
+<text x="-0.4" y="5.685" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="FBGA78" urn="urn:adsk.eagle:package:10611048/2" type="model" library_version="7">
+<description>78-BGA, collapsing, 0.80 mm pitch, 8.00 X 10.5 X 1.00 mm body</description>
+<packageinstances>
+<packageinstance name="FBGA78"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="DDR3-8B" urn="urn:adsk.eagle:symbol:10611046/1" library_version="7">
+<wire x1="-10.16" y1="40.64" x2="12.7" y2="40.64" width="0.254" layer="94"/>
+<wire x1="12.7" y1="40.64" x2="12.7" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-40.64" x2="-10.16" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-40.64" x2="-10.16" y2="40.64" width="0.254" layer="94"/>
+<text x="-10.16" y="41.91" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-43.18" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="CK" x="-12.7" y="25.4" length="short" direction="in"/>
+<pin name="CKE" x="-12.7" y="22.86" length="short" direction="in"/>
+<pin name="!CS" x="-12.7" y="20.32" length="short" direction="in"/>
+<pin name="!WE" x="15.24" y="-22.86" length="short" direction="in" rot="R180"/>
+<pin name="!CAS" x="15.24" y="-27.94" length="short" direction="in" rot="R180"/>
+<pin name="!RAS" x="15.24" y="-30.48" length="short" direction="in" rot="R180"/>
+<pin name="BA0" x="-12.7" y="7.62" length="short" direction="in"/>
+<pin name="BA1" x="-12.7" y="5.08" length="short" direction="in"/>
+<pin name="A0" x="-12.7" y="0" length="short" direction="in"/>
+<pin name="A1" x="-12.7" y="-2.54" length="short" direction="in"/>
+<pin name="A2" x="-12.7" y="-5.08" length="short" direction="in"/>
+<pin name="A3" x="-12.7" y="-7.62" length="short" direction="in"/>
+<pin name="A4" x="-12.7" y="-10.16" length="short" direction="in"/>
+<pin name="A5" x="-12.7" y="-12.7" length="short" direction="in"/>
+<pin name="A6" x="-12.7" y="-15.24" length="short" direction="in"/>
+<pin name="A7" x="-12.7" y="-17.78" length="short" direction="in"/>
+<pin name="A8" x="-12.7" y="-20.32" length="short" direction="in"/>
+<pin name="A9" x="-12.7" y="-22.86" length="short" direction="in"/>
+<pin name="A10" x="-12.7" y="-25.4" length="short" direction="in"/>
+<pin name="A11" x="-12.7" y="-27.94" length="short" direction="in"/>
+<pin name="A12" x="-12.7" y="-30.48" length="short" direction="in"/>
+<pin name="DQL0" x="15.24" y="0" length="short" direction="hiz" rot="R180"/>
+<pin name="NC" x="15.24" y="25.4" length="short" direction="nc" rot="R180"/>
+<pin name="!CK" x="-12.7" y="27.94" visible="pin" length="short"/>
+<pin name="ODT" x="15.24" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="BA2" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="A13" x="-12.7" y="-33.02" length="short" direction="in"/>
+<pin name="A14" x="-12.7" y="-35.56" length="short" direction="in"/>
+<pin name="!RESET" x="15.24" y="-38.1" visible="pin" length="short" rot="R180"/>
+<pin name="DQL1" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="DQL2" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="DQL3" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="DQL4" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="DQL5" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="DQL6" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="DQL7" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="TDQS" x="-12.7" y="38.1" visible="pin" length="short"/>
+<pin name="!TDQS" x="-12.7" y="35.56" visible="pin" length="short"/>
+<pin name="DQS" x="-12.7" y="33.02" visible="pin" length="short"/>
+<pin name="!DQS" x="-12.7" y="30.48" visible="pin" length="short"/>
+<pin name="A15" x="-12.7" y="-38.1" length="short" direction="in"/>
+</symbol>
+<symbol name="DDR3-PWR" urn="urn:adsk.eagle:symbol:10611047/1" library_version="7">
+<wire x1="-5.08" y1="22.86" x2="7.62" y2="22.86" width="0.254" layer="94"/>
+<wire x1="7.62" y1="22.86" x2="7.62" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-33.02" x2="-5.08" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-33.02" x2="-5.08" y2="22.86" width="0.254" layer="94"/>
+<text x="-5.08" y="24.13" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VDDQ@1" x="-7.62" y="10.16" length="short" direction="pwr"/>
+<pin name="VDDQ@2" x="-7.62" y="7.62" length="short" direction="pwr"/>
+<pin name="VDDQ@3" x="-7.62" y="5.08" length="short" direction="pwr"/>
+<pin name="VDDQ@4" x="-7.62" y="2.54" length="short" direction="pwr"/>
+<pin name="VSSQ@1" x="-7.62" y="-2.54" length="short" direction="pwr"/>
+<pin name="VSSQ@2" x="-7.62" y="-5.08" length="short" direction="pwr"/>
+<pin name="VSSQ@3" x="-7.62" y="-7.62" length="short" direction="pwr"/>
+<pin name="VSSQ@4" x="-7.62" y="-10.16" length="short" direction="pwr"/>
+<pin name="VDD@1" x="-7.62" y="20.32" length="short" direction="pwr"/>
+<pin name="VDD@2" x="-7.62" y="17.78" length="short" direction="pwr"/>
+<pin name="VDD@3" x="-7.62" y="15.24" length="short" direction="pwr"/>
+<pin name="VSS@1" x="-7.62" y="-15.24" length="short" direction="pwr"/>
+<pin name="VSS@2" x="-7.62" y="-17.78" length="short" direction="pwr"/>
+<pin name="VSS@3" x="-7.62" y="-20.32" length="short" direction="pwr"/>
+<pin name="VREFDQ" x="-7.62" y="-25.4" visible="pin" length="short"/>
+<pin name="ZQ" x="-7.62" y="-30.48" visible="pin" length="short"/>
+<pin name="VREFCA" x="-7.62" y="-27.94" visible="pin" length="short"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="IS43TR82560DL" urn="urn:adsk.eagle:component:10611049/2" prefix="IC" uservalue="yes" library_version="7">
+<gates>
+<gate name="G$1" symbol="DDR3-8B" x="-43.18" y="0"/>
+<gate name="G$2" symbol="DDR3-PWR" x="22.86" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="FBGA78">
+<connects>
+<connect gate="G$1" pin="!CAS" pad="G3"/>
+<connect gate="G$1" pin="!CK" pad="G7"/>
+<connect gate="G$1" pin="!CS" pad="H2"/>
+<connect gate="G$1" pin="!DQS" pad="D3"/>
+<connect gate="G$1" pin="!RAS" pad="F3"/>
+<connect gate="G$1" pin="!RESET" pad="N2"/>
+<connect gate="G$1" pin="!TDQS" pad="A7"/>
+<connect gate="G$1" pin="!WE" pad="H3"/>
+<connect gate="G$1" pin="A0" pad="K3"/>
+<connect gate="G$1" pin="A1" pad="L7"/>
+<connect gate="G$1" pin="A10" pad="H7"/>
+<connect gate="G$1" pin="A11" pad="M7"/>
+<connect gate="G$1" pin="A12" pad="K7"/>
+<connect gate="G$1" pin="A13" pad="N3"/>
+<connect gate="G$1" pin="A14" pad="N7"/>
+<connect gate="G$1" pin="A15" pad="J7"/>
+<connect gate="G$1" pin="A2" pad="L3"/>
+<connect gate="G$1" pin="A3" pad="K2"/>
+<connect gate="G$1" pin="A4" pad="L8"/>
+<connect gate="G$1" pin="A5" pad="L2"/>
+<connect gate="G$1" pin="A6" pad="M8"/>
+<connect gate="G$1" pin="A7" pad="M2"/>
+<connect gate="G$1" pin="A8" pad="N8"/>
+<connect gate="G$1" pin="A9" pad="M3"/>
+<connect gate="G$1" pin="BA0" pad="J2"/>
+<connect gate="G$1" pin="BA1" pad="K8"/>
+<connect gate="G$1" pin="BA2" pad="J3"/>
+<connect gate="G$1" pin="CK" pad="F7"/>
+<connect gate="G$1" pin="CKE" pad="G9"/>
+<connect gate="G$1" pin="DQL0" pad="B3"/>
+<connect gate="G$1" pin="DQL1" pad="C7"/>
+<connect gate="G$1" pin="DQL2" pad="C2"/>
+<connect gate="G$1" pin="DQL3" pad="C8"/>
+<connect gate="G$1" pin="DQL4" pad="E3"/>
+<connect gate="G$1" pin="DQL5" pad="E8"/>
+<connect gate="G$1" pin="DQL6" pad="D2"/>
+<connect gate="G$1" pin="DQL7" pad="E7"/>
+<connect gate="G$1" pin="DQS" pad="C3"/>
+<connect gate="G$1" pin="NC" pad="A3 F1 F9 H1 H9"/>
+<connect gate="G$1" pin="ODT" pad="G1"/>
+<connect gate="G$1" pin="TDQS" pad="B7"/>
+<connect gate="G$2" pin="VDD@1" pad="A2 G2 K9"/>
+<connect gate="G$2" pin="VDD@2" pad="A9 G8 M1"/>
+<connect gate="G$2" pin="VDD@3" pad="D7 K1 M9" route="any"/>
+<connect gate="G$2" pin="VDDQ@1" pad="B9"/>
+<connect gate="G$2" pin="VDDQ@2" pad="C1"/>
+<connect gate="G$2" pin="VDDQ@3" pad="E2"/>
+<connect gate="G$2" pin="VDDQ@4" pad="E9"/>
+<connect gate="G$2" pin="VREFCA" pad="J8"/>
+<connect gate="G$2" pin="VREFDQ" pad="E1"/>
+<connect gate="G$2" pin="VSS@1" pad="A1 D8 J1 L9"/>
+<connect gate="G$2" pin="VSS@2" pad="A8 F2 J9 N1"/>
+<connect gate="G$2" pin="VSS@3" pad="B1 F8 L1 N9" route="any"/>
+<connect gate="G$2" pin="VSSQ@1" pad="B2 D9"/>
+<connect gate="G$2" pin="VSSQ@2" pad="B8"/>
+<connect gate="G$2" pin="VSSQ@3" pad="C9"/>
+<connect gate="G$2" pin="VSSQ@4" pad="D1"/>
+<connect gate="G$2" pin="ZQ" pad="H8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10611048/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7062,6 +7323,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="SV3" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA05-1" device="" package3d_urn="urn:adsk.eagle:package:8332/1"/>
 <part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="BAT1" library="parts-elna" library_urn="urn:adsk.eagle:library:8169083" deviceset="DCK-3R3E224U-E" device="" package3d_urn="urn:adsk.eagle:package:7451333/2"/>
+<part name="IC1" library="parts-issi" library_urn="urn:adsk.eagle:library:7589419" deviceset="IS43TR82560DL" device="" package3d_urn="urn:adsk.eagle:package:10611048/2"/>
+<part name="IC2" library="parts-issi" library_urn="urn:adsk.eagle:library:7589419" deviceset="IS43TR82560DL" device="" package3d_urn="urn:adsk.eagle:package:10611048/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -8380,10 +8643,138 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="234.823" y="157.9626" size="1.778" layer="95"/>
 <attribute name="VALUE" x="234.823" y="152.8826" size="1.778" layer="96"/>
 </instance>
+<instance part="IC1" gate="G$1" x="63.5" y="91.44" smashed="yes">
+<attribute name="NAME" x="53.34" y="133.35" size="1.778" layer="95"/>
+<attribute name="VALUE" x="53.34" y="48.26" size="1.778" layer="96"/>
+</instance>
+<instance part="IC1" gate="G$2" x="236.22" y="63.5" smashed="yes">
+<attribute name="NAME" x="231.14" y="87.63" size="1.778" layer="95"/>
+<attribute name="VALUE" x="231.14" y="27.94" size="1.778" layer="96"/>
+</instance>
+<instance part="IC2" gate="G$1" x="139.7" y="91.44" smashed="yes">
+<attribute name="NAME" x="129.54" y="133.35" size="1.778" layer="95"/>
+<attribute name="VALUE" x="129.54" y="48.26" size="1.778" layer="96"/>
+</instance>
+<instance part="IC2" gate="G$2" x="236.22" y="124.46" smashed="yes">
+<attribute name="NAME" x="231.14" y="148.59" size="1.778" layer="95"/>
+<attribute name="VALUE" x="231.14" y="88.9" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="DDR3_DQ[1]" class="0">
+<segment>
+<wire x1="78.74" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
+<label x="99.06" y="88.9" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="DQL1"/>
+</segment>
+</net>
+<net name="DDR3_DQ[11]" class="0">
+<segment>
+<wire x1="154.94" y1="83.82" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
+<label x="175.26" y="83.82" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="DQL3"/>
+</segment>
+</net>
+<net name="DDR3_DQ[12]" class="0">
+<segment>
+<wire x1="154.94" y1="81.28" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
+<label x="175.26" y="81.28" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="DQL4"/>
+</segment>
+</net>
+<net name="DDR3_DQ[13]" class="0">
+<segment>
+<wire x1="154.94" y1="78.74" x2="177.8" y2="78.74" width="0.1524" layer="91"/>
+<label x="175.26" y="78.74" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="DQL5"/>
+</segment>
+</net>
+<net name="DDR3_DQ[14]" class="0">
+<segment>
+<wire x1="154.94" y1="76.2" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
+<label x="175.26" y="76.2" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="DQL6"/>
+</segment>
+</net>
+<net name="DDR3_DQ[15]" class="0">
+<segment>
+<wire x1="154.94" y1="73.66" x2="177.8" y2="73.66" width="0.1524" layer="91"/>
+<label x="175.26" y="73.66" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="DQL7"/>
+</segment>
+</net>
+<net name="DDR3_DQ[10]" class="0">
+<segment>
+<wire x1="154.94" y1="86.36" x2="177.8" y2="86.36" width="0.1524" layer="91"/>
+<label x="175.26" y="86.36" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="DQL2"/>
+</segment>
+</net>
+<net name="DDR3_DQ[2]" class="0">
+<segment>
+<wire x1="78.74" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
+<label x="99.06" y="86.36" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="DQL2"/>
+</segment>
+</net>
+<net name="DDR3_DQ[3]" class="0">
+<segment>
+<wire x1="78.74" y1="83.82" x2="101.6" y2="83.82" width="0.1524" layer="91"/>
+<label x="99.06" y="83.82" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="DQL3"/>
+</segment>
+</net>
+<net name="DDR3_DQ[4]" class="0">
+<segment>
+<wire x1="78.74" y1="81.28" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
+<label x="99.06" y="81.28" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="DQL4"/>
+</segment>
+</net>
+<net name="DDR3_DQ[5]" class="0">
+<segment>
+<wire x1="78.74" y1="78.74" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
+<label x="99.06" y="78.74" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="DQL5"/>
+</segment>
+</net>
+<net name="DDR3_DQ[6]" class="0">
+<segment>
+<wire x1="78.74" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
+<label x="99.06" y="76.2" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="DQL6"/>
+</segment>
+</net>
+<net name="DDR3_DQ[7]" class="0">
+<segment>
+<wire x1="78.74" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
+<label x="99.06" y="73.66" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="DQL7"/>
+</segment>
+</net>
+<net name="DDR3_DQ[8]" class="0">
+<segment>
+<wire x1="154.94" y1="91.44" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
+<label x="175.26" y="91.44" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="DQL0"/>
+</segment>
+</net>
+<net name="DDR3_DQ[9]" class="0">
+<segment>
+<wire x1="154.94" y1="88.9" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
+<label x="175.26" y="88.9" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC2" gate="G$1" pin="DQL1"/>
+</segment>
+</net>
+<net name="DDR3_DQ[0]" class="0">
+<segment>
+<wire x1="78.74" y1="91.44" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
+<label x="99.06" y="91.44" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="IC1" gate="G$1" pin="DQL0"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
