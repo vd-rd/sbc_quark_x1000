@@ -3,10 +3,10 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -200,7 +200,7 @@
 <hole x="76" y="3" drill="2.6"/>
 </plain>
 <libraries>
-<library name="DH8066101531900S_R1BX">
+<library name="DH8066101531900S_R1BX" urn="urn:adsk.eagle:library:6859224">
 <packages>
 <package name="INTEL_DH8066101531900S_R1BX" urn="urn:adsk.eagle:footprint:6859225/1">
 <wire x1="7.5" y1="-7.5" x2="-7.5" y2="-7.5" width="0.127" layer="51"/>
@@ -2388,7 +2388,7 @@ Metric Code Size 1005</description>
 </library>
 <library name="parts-winbond" urn="urn:adsk.eagle:library:7686330">
 <packages>
-<package name="SO08-208" urn="urn:adsk.eagle:footprint:10612484/1" library_version="6">
+<package name="SO08-208" urn="urn:adsk.eagle:footprint:17446/1" library_version="3">
 <description>&lt;b&gt;SOIC .208" 8 LEAD&lt;/b&gt;&lt;p&gt;
 Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
 <wire x1="-2.665" y1="2.6308" x2="-2.665" y2="0.508" width="0.1524" layer="21"/>
@@ -2420,9 +2420,9 @@ Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOIC127P790X216-8" urn="urn:adsk.eagle:package:10612485/2" type="model" library_version="6">
-<description>8-SOIC, 1.27 mm pitch, 7.90 mm span, 5.28 X 5.23 X 2.16 mm body
-&lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 7.90 mm span with body size 5.28 X 5.23 X 2.16 mm&lt;/p&gt;</description>
+<package3d name="SO08-208" urn="urn:adsk.eagle:package:17547/1" type="box" library_version="3">
+<description>SOIC .208" 8 LEAD
+Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
 <packageinstances>
 <packageinstance name="SO08-208"/>
 </packageinstances>
@@ -2622,7 +2622,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="DH8066101531900S_R1BX" package="INTEL_DH8066101531900S_R1BX" package3d_urn="urn:adsk.eagle:package:6859237/1" value="DH8066101531900S_R1BX" x="33" y="20" smashed="yes" rot="R90">
+<element name="U1" library="DH8066101531900S_R1BX" library_urn="urn:adsk.eagle:library:6859224" package="INTEL_DH8066101531900S_R1BX" package3d_urn="urn:adsk.eagle:package:6859237/1" value="DH8066101531900S_R1BX" x="33" y="20" smashed="yes" rot="R90">
 <attribute name="AVAILABILITY" value="Unavailable" x="43.16" y="49.21" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value=" MPU Quark 32-Bit 400MHz 393-Pin FCBGA Tray " x="43.16" y="49.21" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Intel" x="43.16" y="49.21" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2682,7 +2682,7 @@ design rules under a new name.</description>
 <element name="IC2" library="parts-issi" library_urn="urn:adsk.eagle:library:7589419" package="FBGA78" package3d_urn="urn:adsk.eagle:package:10611048/2" value="" x="53" y="15.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="47.315" y="14.8" size="0.8" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="IC3" library="parts-winbond" library_urn="urn:adsk.eagle:library:7686330" package="SO08-208" package3d_urn="urn:adsk.eagle:package:10612485/2" value="" x="32" y="3" smashed="yes" rot="R270">
+<element name="IC3" library="parts-winbond" library_urn="urn:adsk.eagle:library:7686330" package="SO08-208" package3d_urn="urn:adsk.eagle:package:17547/1" value="" x="32" y="3" smashed="yes" rot="R270">
 <attribute name="NAME" x="29.46" y="6.175" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="29.46" y="-1.445" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -3650,6 +3650,66 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$1">
 <contactref element="IC1" pad="N2"/>
+</signal>
+<signal name="I2C_CLK">
+<contactref element="U1" pad="C7"/>
+</signal>
+<signal name="LSPI_MOSI">
+<contactref element="U1" pad="AK32"/>
+</signal>
+<signal name="LSPI_SCK">
+<contactref element="U1" pad="AM35"/>
+</signal>
+<signal name="I2C_DATA">
+<contactref element="U1" pad="B6"/>
+</signal>
+<signal name="LSPI_MISO">
+<contactref element="U1" pad="AN35"/>
+</signal>
+<signal name="LSPI_SS_B">
+<contactref element="U1" pad="AM33"/>
+</signal>
+<signal name="SPI1_MOSI">
+<contactref element="U1" pad="AH32"/>
+</signal>
+<signal name="SPI1_SCK">
+<contactref element="U1" pad="AH34"/>
+</signal>
+<signal name="SPI0_MOSI">
+<contactref element="U1" pad="AG35"/>
+</signal>
+<signal name="SPI0_SCK">
+<contactref element="U1" pad="AE32"/>
+</signal>
+<signal name="TDI">
+<contactref element="U1" pad="N4"/>
+</signal>
+<signal name="SPI1_MISO">
+<contactref element="U1" pad="AK34"/>
+</signal>
+<signal name="SPI1_SS_B">
+<contactref element="U1" pad="AJ33"/>
+</signal>
+<signal name="SPI0_MISO">
+<contactref element="U1" pad="AG33"/>
+</signal>
+<signal name="SPI0_SS_B">
+<contactref element="U1" pad="AE34"/>
+</signal>
+<signal name="TCK">
+<contactref element="U1" pad="M3"/>
+</signal>
+<signal name="TDO">
+<contactref element="U1" pad="R1"/>
+</signal>
+<signal name="TMS">
+<contactref element="U1" pad="N2"/>
+</signal>
+<signal name="TS_TDA">
+<contactref element="U1" pad="AC7"/>
+</signal>
+<signal name="TS_TDC">
+<contactref element="U1" pad="AC5"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
